@@ -1,0 +1,7 @@
+FROM python:latest
+
+COPY . ./
+
+CMD ["python", "app2.py"]
+
+

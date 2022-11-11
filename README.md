@@ -9,7 +9,7 @@ Trial for creating docker cluster images
 5. To terminate cluster `docker-compose down` or `Ctrl+C`
 
 ## Note:
-Steps 1 to 4 will create an docker cluster to create images and run those images.
+Steps 1 to 4 will create an docker cluster to create images and run those images.</br>
 Here, we need to edit the `docker-compose.yml` file to as create the multiple docker images.
 
 This should run 2 python scripts.

@@ -2,7 +2,7 @@
 Trial for creating docker cluster images
 
 ## How to use
-1. To clone repository to your local - `git clone <link>`
+1. To clone repository to your local - `git clone https://github.com/bhargavchintam/docker-cluster.git`
 2. To navigate to repo folder - `cd docker-cluster`
 3. To build docker cluster - `docker-compose build`
 4. To run the cluster `docker-compose up`

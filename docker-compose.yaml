@@ -8,7 +8,9 @@ services:
     container_name: python-code
     volumes:
       - .:/demo
-    command: python3 app.py
+    ports:
+      - 9090:9090
+    command: python app.py
   python-demo2:
     image: python-demo2:latest
     build:
@@ -17,4 +19,6 @@ services:
     container_name: python-code2
     volumes:
       - .:/demo2
-    command: python3 app2.py
+    ports:
+      - 9100:9100
+    command: python app2.py

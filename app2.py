@@ -1,1 +1,4 @@
-print('Hello world 2')
+import time
+print("Hello 2")
+time.sleep(45)
+print("Hello 2")

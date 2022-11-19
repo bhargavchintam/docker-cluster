@@ -8,6 +8,7 @@ import subprocess
 
 import Xlib.display
 os.environ['DISPLAY'] = ":0"
+# os.environ['XAUTHORITY']='/run/user/1000/gdm/Xauthority'
 print(os.environ['DISPLAY'])
 
 display = Display(visible=0, size=(1920, 1080))
@@ -16,10 +17,10 @@ display.start()
 import pyautogui
 
 chrome_options = Options()
-chrome_options.add_argument('--headless')
+# chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-browser = webdriver.Chrome('chromedriver', chrome_options=chrome_options)
+# chrome_options.add_argument('--disable-dev-shm-usage')
+browser = webdriver.Chrome('chromedriver', options=chrome_options)
 browser.set_window_size(1920, 1080)
 # browser.get('chrome://settings/')
 # browser.execute_script('chrome.settingsPrivate.setDefaultZoom(1.5);')
@@ -31,7 +32,7 @@ print(browser.title)
 screenshot = pyautogui.screenshot()
 screenshot.save(f"ss_before_1.png")
 
-time.sleep(45)
+#time.sleep(45)
 
 screenshot = pyautogui.screenshot()
 screenshot.save(f"ss_after_1.png")

@@ -1,0 +1,7 @@
+pyvirtualdisplay
+pyautogui
+numpy
+pandas
+opencv-python
+python3-xlib
+selenium

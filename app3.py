@@ -30,16 +30,16 @@ browser.get('https://github.com/asweigart/pyautogui/blob/master/pyautogui/_pyaut
 print(browser.title)
 
 screenshot = pyautogui.screenshot()
-screenshot.save(f"ss_before_2.png")
+screenshot.save(f"ss_before_3.png")
 
 pyautogui.scroll(-10)
 
 screenshot = pyautogui.screenshot()
-screenshot.save(f"ss_after_2.png")
+screenshot.save(f"ss_after_3.png")
 
 # To save Screenshot to S3
-subprocess.run(f"aws s3 cp ss_after_2.png s3://cp-patient-datastore/rough_work/headless_chrome/ss_before_2.png", shell=True)
-subprocess.run(f"aws s3 cp ss_before_2.png s3://cp-patient-datastore/rough_work/headless_chrome/ss_after_2.png", shell=True)
+subprocess.run(f"aws s3 cp ss_after_3.png s3://cp-patient-datastore/rough_work/headless_chrome/ss_before_3.png", shell=True)
+subprocess.run(f"aws s3 cp ss_before_3.png s3://cp-patient-datastore/rough_work/headless_chrome/ss_after_3.png", shell=True)
 
 browser.quit()
 

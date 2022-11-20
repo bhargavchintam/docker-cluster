@@ -16,7 +16,7 @@ RUN apt-get install -y python3-dev
 # pip install pyautogui
 
 RUN export DISPLAY=":0"
-RUN export XAUTHORITY="/run/user/1000/gdm/Xauthority"
+RUN export XAUTHORITY="./Xauthority"
 
 RUN echo "DISPLAY=:0" >> ~/.bashrc
 RUN touch ~/.Xauthority

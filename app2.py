@@ -17,14 +17,14 @@ display.start()
 import pyautogui
 
 chrome_options = Options()
-# chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
-# chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-dev-shm-usage')
 browser = webdriver.Chrome('chromedriver', options=chrome_options)
 browser.set_window_size(1920, 1080)
 # browser.get('chrome://settings/')
 # browser.execute_script('chrome.settingsPrivate.setDefaultZoom(1.5);')
-browser.get('http://172.17.17.17/HISTree/Login/Login?ReturnUrl=%2fHISTree%2f')
+browser.get('https://github.com/asweigart/pyautogui/blob/master/pyautogui/_pyautogui_x11.py')
 # browser.execute_script("document.body.style.zoom='150%'")
 
 print(browser.title)

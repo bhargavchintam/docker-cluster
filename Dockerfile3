@@ -16,9 +16,9 @@ RUN apt-get install -y python3-dev
 
 # Configurations for Virtual Display
 RUN export DISPLAY=":0"
-RUN xauth generate :0 . trusted
 RUN echo "DISPLAY=:0" >> ~/.bashrc
 RUN touch ~/.Xauthority
+RUN xauth generate :0 . trusted
 
 # Installing Chrome
 RUN apt-get -y update

@@ -18,7 +18,7 @@ import pyautogui
 
 chrome_options = Options()
 chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--headless')
+# chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-dev-shm-usage')
 browser = webdriver.Chrome('chromedriver', options=chrome_options)
 browser.set_window_size(1920, 1080)

@@ -10,13 +10,12 @@ RUN pip install -r requirements.txt
 RUN apt-get install -y awscli
 RUN apt-get install -y xvfb
 RUN apt-get install -y scrot
-RUN pip install python3-xlib
 RUN apt-get install -y python3-tk
 RUN apt-get install -y python3-dev
 # pip install pyautogui
 
 RUN export DISPLAY=":0"
-RUN export XAUTHORITY="./Xauthority"
+RUN xauth generate :0 . trusted
 
 RUN echo "DISPLAY=:0" >> ~/.bashrc
 RUN touch ~/.Xauthority

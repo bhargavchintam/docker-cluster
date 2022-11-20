@@ -5,3 +5,4 @@ pandas
 opencv-python
 python3-xlib
 selenium
+awscli

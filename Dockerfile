@@ -18,7 +18,6 @@ RUN apt-get install -y python3-dev
 RUN export DISPLAY=":0"
 RUN echo "DISPLAY=:0" >> ~/.bashrc
 RUN touch ~/.Xauthority
-RUN xauth generate :0 . trusted
 
 # Installing Chrome
 RUN apt-get -y update

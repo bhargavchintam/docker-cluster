@@ -14,4 +14,4 @@ Trial for creating docker cluster images and making containers run in parallel u
 Steps 1 to 4 will create an docker cluster to create images and run those images.</br>
 Here, we need to edit the `docker-compose.yml` file to as create the multiple docker images.
 
-This should run 2 python scripts.
+This should run 3 python scripts.
